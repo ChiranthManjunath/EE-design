@@ -24,6 +24,10 @@ function Header() {
     
   };
 
+  const handleOrder = () => {
+    history.push("orders");
+  };
+
   
   const handleUser = () => {
     if(user) {
@@ -66,6 +70,12 @@ function Header() {
             {user ? 'Sign Out' : 'Sign In' }
             </span>
           </div>
+        </div>
+
+        <div className="header__option"> 
+          <span className="header__orders" onClick={handleOrder}>
+            Order
+          </span>
         </div>
 
         <div className="header__option ">

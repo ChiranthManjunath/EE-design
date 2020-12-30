@@ -12,6 +12,7 @@ import SignInAndSignUp from "./SignInAndSignUp";
 import { useStateValue } from './StateProvider';
 import {auth} from "./firebase"
 import Shop from "./Shop";
+import Orders from "./orders"
 
 import CheckoutPage from "./checkoutPage";
 
@@ -48,7 +49,7 @@ return(
        <ReactNotifications />
     </div>  
   <div>
-    <Header />
+          <Header />
         <Switch>
 
 
@@ -63,12 +64,15 @@ return(
           </Route>
           <Route path="/checkout">
               <CheckoutPage />
+          </Route>  
+          <Route path="/orders">
+          <Orders />
           </Route>
           <Route exact path="/">
             <HomePage />
           </Route>
         </Switch>
-    <Footer />
+       <Footer />   
       </div>
     </Router>
   );
