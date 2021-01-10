@@ -72,12 +72,7 @@ function Header() {
           </div>
         </div>
 
-        <div className="header__option"> 
-          <span className="header__orders" onClick={handleOrder}>
-            Order
-          </span>
-        </div>
-
+        
         <div className="header__option ">
             <Link to = "/checkout">
               <div className="vector">  
